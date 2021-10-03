@@ -1,8 +1,8 @@
 RegisterNetEvent("mrp-burgershot:startprocess3")
 AddEventHandler("mrp-burgershot:startprocess3", function()
     local rank = exports["mrp_manager"]:GroupRank("burger_shot")
-    if rank > 0 then    
-        if exports["mrp-inventory"]:hasEnoughOfItem("rawpatty", 1) then 
+    if rank > 0 then
+        if exports["mrp-inventory"]:hasEnoughOfItem("rawpatty", 1) then
             local dict = 'amb@prop_human_bbq@male@idle_a'
             LoadDict(dict)
             FreezeEntityPosition(GetPlayerPed(-1),true)
@@ -30,7 +30,7 @@ end)
 RegisterNetEvent("mrp-burgershot:startfryer")
 AddEventHandler("mrp-burgershot:startfryer", function()
     local rank = exports["mrp_manager"]:GroupRank("burger_shot")
-    if rank > 0 then  
+    if rank > 0 then
         if exports["mrp-inventory"]:hasEnoughOfItem("potato", 1) then
             local dict = 'missfinale_c2ig_11'
             LoadDict(dict)
@@ -87,7 +87,7 @@ RegisterNetEvent("mrp-burgershot:getcola")
 AddEventHandler("mrp-burgershot:getcola", function()
     local rank = exports["mrp_manager"]:GroupRank("burger_shot")
     if rank > 0 then
-        if exports["mrp-inventory"]:hasEnoughOfItem("hfcs", 1) then   
+        if exports["mrp-inventory"]:hasEnoughOfItem("hfcs", 1) then
             local dict = 'mp_ped_interaction'
             LoadDict(dict)
             FreezeEntityPosition(GetPlayerPed(-1),true)
